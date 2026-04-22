@@ -1,0 +1,6 @@
+
+  VITE v7.3.1  ready in 466 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: http://192.168.1.6:5173/
+  ➜  press h + enter to show help
