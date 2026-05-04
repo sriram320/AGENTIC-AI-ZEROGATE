@@ -1,0 +1,964 @@
+{
+  "samples": [
+    {
+      "id": "sqli_pos_01",
+      "file": "samples/sqli/positive/sqli_pos_01.py",
+      "category": "SQL Injection",
+      "expected_verdict": "VULNERABLE",
+      "expected_severity": "HIGH",
+      "description": "Auto-generated SQL Injection vulnerable sample."
+    },
+    {
+      "id": "sqli_pos_02",
+      "file": "samples/sqli/positive/sqli_pos_02.py",
+      "category": "SQL Injection",
+      "expected_verdict": "VULNERABLE",
+      "expected_severity": "HIGH",
+      "description": "Auto-generated SQL Injection vulnerable sample."
+    },
+    {
+      "id": "sqli_pos_03",
+      "file": "samples/sqli/positive/sqli_pos_03.py",
+      "category": "SQL Injection",
+      "expected_verdict": "VULNERABLE",
+      "expected_severity": "HIGH",
+      "description": "Auto-generated SQL Injection vulnerable sample."
+    },
+    {
+      "id": "sqli_pos_04",
+      "file": "samples/sqli/positive/sqli_pos_04.py",
+      "category": "SQL Injection",
+      "expected_verdict": "VULNERABLE",
+      "expected_severity": "HIGH",
+      "description": "Auto-generated SQL Injection vulnerable sample."
+    },
+    {
+      "id": "sqli_pos_05",
+      "file": "samples/sqli/positive/sqli_pos_05.py",
+      "category": "SQL Injection",
+      "expected_verdict": "VULNERABLE",
+      "expected_severity": "HIGH",
+      "description": "Auto-generated SQL Injection vulnerable sample."
+    },
+    {
+      "id": "sqli_pos_06",
+      "file": "samples/sqli/positive/sqli_pos_06.py",
+      "category": "SQL Injection",
+      "expected_verdict": "VULNERABLE",
+      "expected_severity": "HIGH",
+      "description": "Auto-generated SQL Injection vulnerable sample."
+    },
+    {
+      "id": "sqli_pos_07",
+      "file": "samples/sqli/positive/sqli_pos_07.py",
+      "category": "SQL Injection",
+      "expected_verdict": "VULNERABLE",
+      "expected_severity": "HIGH",
+      "description": "Auto-generated SQL Injection vulnerable sample."
+    },
+    {
+      "id": "sqli_pos_08",
+      "file": "samples/sqli/positive/sqli_pos_08.py",
+      "category": "SQL Injection",
+      "expected_verdict": "VULNERABLE",
+      "expected_severity": "HIGH",
+      "description": "Auto-generated SQL Injection vulnerable sample."
+    },
+    {
+      "id": "sqli_pos_09",
+      "file": "samples/sqli/positive/sqli_pos_09.py",
+      "category": "SQL Injection",
+      "expected_verdict": "VULNERABLE",
+      "expected_severity": "HIGH",
+      "description": "Auto-generated SQL Injection vulnerable sample."
+    },
+    {
+      "id": "sqli_pos_10",
+      "file": "samples/sqli/positive/sqli_pos_10.py",
+      "category": "SQL Injection",
+      "expected_verdict": "VULNERABLE",
+      "expected_severity": "HIGH",
+      "description": "Auto-generated SQL Injection vulnerable sample."
+    },
+    {
+      "id": "sqli_pos_11",
+      "file": "samples/sqli/positive/sqli_pos_11.py",
+      "category": "SQL Injection",
+      "expected_verdict": "VULNERABLE",
+      "expected_severity": "HIGH",
+      "description": "Auto-generated SQL Injection vulnerable sample."
+    },
+    {
+      "id": "sqli_pos_12",
+      "file": "samples/sqli/positive/sqli_pos_12.py",
+      "category": "SQL Injection",
+      "expected_verdict": "VULNERABLE",
+      "expected_severity": "HIGH",
+      "description": "Auto-generated SQL Injection vulnerable sample."
+    },
+    {
+      "id": "sqli_pos_13",
+      "file": "samples/sqli/positive/sqli_pos_13.py",
+      "category": "SQL Injection",
+      "expected_verdict": "VULNERABLE",
+      "expected_severity": "HIGH",
+      "description": "Auto-generated SQL Injection vulnerable sample."
+    },
+    {
+      "id": "sqli_pos_14",
+      "file": "samples/sqli/positive/sqli_pos_14.py",
+      "category": "SQL Injection",
+      "expected_verdict": "VULNERABLE",
+      "expected_severity": "HIGH",
+      "description": "Auto-generated SQL Injection vulnerable sample."
+    },
+    {
+      "id": "sqli_pos_15",
+      "file": "samples/sqli/positive/sqli_pos_15.py",
+      "category": "SQL Injection",
+      "expected_verdict": "VULNERABLE",
+      "expected_severity": "HIGH",
+      "description": "Auto-generated SQL Injection vulnerable sample."
+    },
+    {
+      "id": "sqli_neg_16",
+      "file": "samples/sqli/negative/sqli_neg_16.py",
+      "category": "SQL Injection",
+      "expected_verdict": "CLEAN",
+      "expected_severity": "LOW",
+      "description": "Auto-generated SQL Injection clean sample."
+    },
+    {
+      "id": "sqli_neg_17",
+      "file": "samples/sqli/negative/sqli_neg_17.py",
+      "category": "SQL Injection",
+      "expected_verdict": "CLEAN",
+      "expected_severity": "LOW",
+      "description": "Auto-generated SQL Injection clean sample."
+    },
+    {
+      "id": "sqli_neg_18",
+      "file": "samples/sqli/negative/sqli_neg_18.py",
+      "category": "SQL Injection",
+      "expected_verdict": "CLEAN",
+      "expected_severity": "LOW",
+      "description": "Auto-generated SQL Injection clean sample."
+    },
+    {
+      "id": "sqli_neg_19",
+      "file": "samples/sqli/negative/sqli_neg_19.py",
+      "category": "SQL Injection",
+      "expected_verdict": "CLEAN",
+      "expected_severity": "LOW",
+      "description": "Auto-generated SQL Injection clean sample."
+    },
+    {
+      "id": "sqli_neg_20",
+      "file": "samples/sqli/negative/sqli_neg_20.py",
+      "category": "SQL Injection",
+      "expected_verdict": "CLEAN",
+      "expected_severity": "LOW",
+      "description": "Auto-generated SQL Injection clean sample."
+    },
+    {
+      "id": "sqli_neg_21",
+      "file": "samples/sqli/negative/sqli_neg_21.py",
+      "category": "SQL Injection",
+      "expected_verdict": "CLEAN",
+      "expected_severity": "LOW",
+      "description": "Auto-generated SQL Injection clean sample."
+    },
+    {
+      "id": "sqli_neg_22",
+      "file": "samples/sqli/negative/sqli_neg_22.py",
+      "category": "SQL Injection",
+      "expected_verdict": "CLEAN",
+      "expected_severity": "LOW",
+      "description": "Auto-generated SQL Injection clean sample."
+    },
+    {
+      "id": "sqli_neg_23",
+      "file": "samples/sqli/negative/sqli_neg_23.py",
+      "category": "SQL Injection",
+      "expected_verdict": "CLEAN",
+      "expected_severity": "LOW",
+      "description": "Auto-generated SQL Injection clean sample."
+    },
+    {
+      "id": "sqli_neg_24",
+      "file": "samples/sqli/negative/sqli_neg_24.py",
+      "category": "SQL Injection",
+      "expected_verdict": "CLEAN",
+      "expected_severity": "LOW",
+      "description": "Auto-generated SQL Injection clean sample."
+    },
+    {
+      "id": "sqli_neg_25",
+      "file": "samples/sqli/negative/sqli_neg_25.py",
+      "category": "SQL Injection",
+      "expected_verdict": "CLEAN",
+      "expected_severity": "LOW",
+      "description": "Auto-generated SQL Injection clean sample."
+    },
+    {
+      "id": "sqli_neg_26",
+      "file": "samples/sqli/negative/sqli_neg_26.py",
+      "category": "SQL Injection",
+      "expected_verdict": "CLEAN",
+      "expected_severity": "LOW",
+      "description": "Auto-generated SQL Injection clean sample."
+    },
+    {
+      "id": "sqli_neg_27",
+      "file": "samples/sqli/negative/sqli_neg_27.py",
+      "category": "SQL Injection",
+      "expected_verdict": "CLEAN",
+      "expected_severity": "LOW",
+      "description": "Auto-generated SQL Injection clean sample."
+    },
+    {
+      "id": "sqli_neg_28",
+      "file": "samples/sqli/negative/sqli_neg_28.py",
+      "category": "SQL Injection",
+      "expected_verdict": "CLEAN",
+      "expected_severity": "LOW",
+      "description": "Auto-generated SQL Injection clean sample."
+    },
+    {
+      "id": "sqli_neg_29",
+      "file": "samples/sqli/negative/sqli_neg_29.py",
+      "category": "SQL Injection",
+      "expected_verdict": "CLEAN",
+      "expected_severity": "LOW",
+      "description": "Auto-generated SQL Injection clean sample."
+    },
+    {
+      "id": "sqli_neg_30",
+      "file": "samples/sqli/negative/sqli_neg_30.py",
+      "category": "SQL Injection",
+      "expected_verdict": "CLEAN",
+      "expected_severity": "LOW",
+      "description": "Auto-generated SQL Injection clean sample."
+    },
+    {
+      "id": "xss_pos_01",
+      "file": "samples/xss/positive/xss_pos_01.py",
+      "category": "XSS",
+      "expected_verdict": "VULNERABLE",
+      "expected_severity": "HIGH",
+      "description": "Auto-generated XSS vulnerable sample."
+    },
+    {
+      "id": "xss_pos_02",
+      "file": "samples/xss/positive/xss_pos_02.py",
+      "category": "XSS",
+      "expected_verdict": "VULNERABLE",
+      "expected_severity": "HIGH",
+      "description": "Auto-generated XSS vulnerable sample."
+    },
+    {
+      "id": "xss_pos_03",
+      "file": "samples/xss/positive/xss_pos_03.py",
+      "category": "XSS",
+      "expected_verdict": "VULNERABLE",
+      "expected_severity": "HIGH",
+      "description": "Auto-generated XSS vulnerable sample."
+    },
+    {
+      "id": "xss_pos_04",
+      "file": "samples/xss/positive/xss_pos_04.py",
+      "category": "XSS",
+      "expected_verdict": "VULNERABLE",
+      "expected_severity": "HIGH",
+      "description": "Auto-generated XSS vulnerable sample."
+    },
+    {
+      "id": "xss_pos_05",
+      "file": "samples/xss/positive/xss_pos_05.py",
+      "category": "XSS",
+      "expected_verdict": "VULNERABLE",
+      "expected_severity": "HIGH",
+      "description": "Auto-generated XSS vulnerable sample."
+    },
+    {
+      "id": "xss_pos_06",
+      "file": "samples/xss/positive/xss_pos_06.py",
+      "category": "XSS",
+      "expected_verdict": "VULNERABLE",
+      "expected_severity": "HIGH",
+      "description": "Auto-generated XSS vulnerable sample."
+    },
+    {
+      "id": "xss_pos_07",
+      "file": "samples/xss/positive/xss_pos_07.py",
+      "category": "XSS",
+      "expected_verdict": "VULNERABLE",
+      "expected_severity": "HIGH",
+      "description": "Auto-generated XSS vulnerable sample."
+    },
+    {
+      "id": "xss_pos_08",
+      "file": "samples/xss/positive/xss_pos_08.py",
+      "category": "XSS",
+      "expected_verdict": "VULNERABLE",
+      "expected_severity": "HIGH",
+      "description": "Auto-generated XSS vulnerable sample."
+    },
+    {
+      "id": "xss_pos_09",
+      "file": "samples/xss/positive/xss_pos_09.py",
+      "category": "XSS",
+      "expected_verdict": "VULNERABLE",
+      "expected_severity": "HIGH",
+      "description": "Auto-generated XSS vulnerable sample."
+    },
+    {
+      "id": "xss_pos_10",
+      "file": "samples/xss/positive/xss_pos_10.py",
+      "category": "XSS",
+      "expected_verdict": "VULNERABLE",
+      "expected_severity": "HIGH",
+      "description": "Auto-generated XSS vulnerable sample."
+    },
+    {
+      "id": "xss_pos_11",
+      "file": "samples/xss/positive/xss_pos_11.py",
+      "category": "XSS",
+      "expected_verdict": "VULNERABLE",
+      "expected_severity": "HIGH",
+      "description": "Auto-generated XSS vulnerable sample."
+    },
+    {
+      "id": "xss_pos_12",
+      "file": "samples/xss/positive/xss_pos_12.py",
+      "category": "XSS",
+      "expected_verdict": "VULNERABLE",
+      "expected_severity": "HIGH",
+      "description": "Auto-generated XSS vulnerable sample."
+    },
+    {
+      "id": "xss_pos_13",
+      "file": "samples/xss/positive/xss_pos_13.py",
+      "category": "XSS",
+      "expected_verdict": "VULNERABLE",
+      "expected_severity": "HIGH",
+      "description": "Auto-generated XSS vulnerable sample."
+    },
+    {
+      "id": "xss_pos_14",
+      "file": "samples/xss/positive/xss_pos_14.py",
+      "category": "XSS",
+      "expected_verdict": "VULNERABLE",
+      "expected_severity": "HIGH",
+      "description": "Auto-generated XSS vulnerable sample."
+    },
+    {
+      "id": "xss_pos_15",
+      "file": "samples/xss/positive/xss_pos_15.py",
+      "category": "XSS",
+      "expected_verdict": "VULNERABLE",
+      "expected_severity": "HIGH",
+      "description": "Auto-generated XSS vulnerable sample."
+    },
+    {
+      "id": "xss_neg_16",
+      "file": "samples/xss/negative/xss_neg_16.py",
+      "category": "XSS",
+      "expected_verdict": "CLEAN",
+      "expected_severity": "LOW",
+      "description": "Auto-generated XSS clean sample."
+    },
+    {
+      "id": "xss_neg_17",
+      "file": "samples/xss/negative/xss_neg_17.py",
+      "category": "XSS",
+      "expected_verdict": "CLEAN",
+      "expected_severity": "LOW",
+      "description": "Auto-generated XSS clean sample."
+    },
+    {
+      "id": "xss_neg_18",
+      "file": "samples/xss/negative/xss_neg_18.py",
+      "category": "XSS",
+      "expected_verdict": "CLEAN",
+      "expected_severity": "LOW",
+      "description": "Auto-generated XSS clean sample."
+    },
+    {
+      "id": "xss_neg_19",
+      "file": "samples/xss/negative/xss_neg_19.py",
+      "category": "XSS",
+      "expected_verdict": "CLEAN",
+      "expected_severity": "LOW",
+      "description": "Auto-generated XSS clean sample."
+    },
+    {
+      "id": "xss_neg_20",
+      "file": "samples/xss/negative/xss_neg_20.py",
+      "category": "XSS",
+      "expected_verdict": "CLEAN",
+      "expected_severity": "LOW",
+      "description": "Auto-generated XSS clean sample."
+    },
+    {
+      "id": "xss_neg_21",
+      "file": "samples/xss/negative/xss_neg_21.py",
+      "category": "XSS",
+      "expected_verdict": "CLEAN",
+      "expected_severity": "LOW",
+      "description": "Auto-generated XSS clean sample."
+    },
+    {
+      "id": "xss_neg_22",
+      "file": "samples/xss/negative/xss_neg_22.py",
+      "category": "XSS",
+      "expected_verdict": "CLEAN",
+      "expected_severity": "LOW",
+      "description": "Auto-generated XSS clean sample."
+    },
+    {
+      "id": "xss_neg_23",
+      "file": "samples/xss/negative/xss_neg_23.py",
+      "category": "XSS",
+      "expected_verdict": "CLEAN",
+      "expected_severity": "LOW",
+      "description": "Auto-generated XSS clean sample."
+    },
+    {
+      "id": "xss_neg_24",
+      "file": "samples/xss/negative/xss_neg_24.py",
+      "category": "XSS",
+      "expected_verdict": "CLEAN",
+      "expected_severity": "LOW",
+      "description": "Auto-generated XSS clean sample."
+    },
+    {
+      "id": "xss_neg_25",
+      "file": "samples/xss/negative/xss_neg_25.py",
+      "category": "XSS",
+      "expected_verdict": "CLEAN",
+      "expected_severity": "LOW",
+      "description": "Auto-generated XSS clean sample."
+    },
+    {
+      "id": "xss_neg_26",
+      "file": "samples/xss/negative/xss_neg_26.py",
+      "category": "XSS",
+      "expected_verdict": "CLEAN",
+      "expected_severity": "LOW",
+      "description": "Auto-generated XSS clean sample."
+    },
+    {
+      "id": "xss_neg_27",
+      "file": "samples/xss/negative/xss_neg_27.py",
+      "category": "XSS",
+      "expected_verdict": "CLEAN",
+      "expected_severity": "LOW",
+      "description": "Auto-generated XSS clean sample."
+    },
+    {
+      "id": "xss_neg_28",
+      "file": "samples/xss/negative/xss_neg_28.py",
+      "category": "XSS",
+      "expected_verdict": "CLEAN",
+      "expected_severity": "LOW",
+      "description": "Auto-generated XSS clean sample."
+    },
+    {
+      "id": "xss_neg_29",
+      "file": "samples/xss/negative/xss_neg_29.py",
+      "category": "XSS",
+      "expected_verdict": "CLEAN",
+      "expected_severity": "LOW",
+      "description": "Auto-generated XSS clean sample."
+    },
+    {
+      "id": "xss_neg_30",
+      "file": "samples/xss/negative/xss_neg_30.py",
+      "category": "XSS",
+      "expected_verdict": "CLEAN",
+      "expected_severity": "LOW",
+      "description": "Auto-generated XSS clean sample."
+    },
+    {
+      "id": "rce_pos_01",
+      "file": "samples/rce/positive/rce_pos_01.py",
+      "category": "RCE",
+      "expected_verdict": "VULNERABLE",
+      "expected_severity": "HIGH",
+      "description": "Auto-generated RCE vulnerable sample."
+    },
+    {
+      "id": "rce_pos_02",
+      "file": "samples/rce/positive/rce_pos_02.py",
+      "category": "RCE",
+      "expected_verdict": "VULNERABLE",
+      "expected_severity": "HIGH",
+      "description": "Auto-generated RCE vulnerable sample."
+    },
+    {
+      "id": "rce_pos_03",
+      "file": "samples/rce/positive/rce_pos_03.py",
+      "category": "RCE",
+      "expected_verdict": "VULNERABLE",
+      "expected_severity": "HIGH",
+      "description": "Auto-generated RCE vulnerable sample."
+    },
+    {
+      "id": "rce_pos_04",
+      "file": "samples/rce/positive/rce_pos_04.py",
+      "category": "RCE",
+      "expected_verdict": "VULNERABLE",
+      "expected_severity": "HIGH",
+      "description": "Auto-generated RCE vulnerable sample."
+    },
+    {
+      "id": "rce_pos_05",
+      "file": "samples/rce/positive/rce_pos_05.py",
+      "category": "RCE",
+      "expected_verdict": "VULNERABLE",
+      "expected_severity": "HIGH",
+      "description": "Auto-generated RCE vulnerable sample."
+    },
+    {
+      "id": "rce_pos_06",
+      "file": "samples/rce/positive/rce_pos_06.py",
+      "category": "RCE",
+      "expected_verdict": "VULNERABLE",
+      "expected_severity": "HIGH",
+      "description": "Auto-generated RCE vulnerable sample."
+    },
+    {
+      "id": "rce_pos_07",
+      "file": "samples/rce/positive/rce_pos_07.py",
+      "category": "RCE",
+      "expected_verdict": "VULNERABLE",
+      "expected_severity": "HIGH",
+      "description": "Auto-generated RCE vulnerable sample."
+    },
+    {
+      "id": "rce_pos_08",
+      "file": "samples/rce/positive/rce_pos_08.py",
+      "category": "RCE",
+      "expected_verdict": "VULNERABLE",
+      "expected_severity": "HIGH",
+      "description": "Auto-generated RCE vulnerable sample."
+    },
+    {
+      "id": "rce_pos_09",
+      "file": "samples/rce/positive/rce_pos_09.py",
+      "category": "RCE",
+      "expected_verdict": "VULNERABLE",
+      "expected_severity": "HIGH",
+      "description": "Auto-generated RCE vulnerable sample."
+    },
+    {
+      "id": "rce_pos_10",
+      "file": "samples/rce/positive/rce_pos_10.py",
+      "category": "RCE",
+      "expected_verdict": "VULNERABLE",
+      "expected_severity": "HIGH",
+      "description": "Auto-generated RCE vulnerable sample."
+    },
+    {
+      "id": "rce_pos_11",
+      "file": "samples/rce/positive/rce_pos_11.py",
+      "category": "RCE",
+      "expected_verdict": "VULNERABLE",
+      "expected_severity": "HIGH",
+      "description": "Auto-generated RCE vulnerable sample."
+    },
+    {
+      "id": "rce_pos_12",
+      "file": "samples/rce/positive/rce_pos_12.py",
+      "category": "RCE",
+      "expected_verdict": "VULNERABLE",
+      "expected_severity": "HIGH",
+      "description": "Auto-generated RCE vulnerable sample."
+    },
+    {
+      "id": "rce_pos_13",
+      "file": "samples/rce/positive/rce_pos_13.py",
+      "category": "RCE",
+      "expected_verdict": "VULNERABLE",
+      "expected_severity": "HIGH",
+      "description": "Auto-generated RCE vulnerable sample."
+    },
+    {
+      "id": "rce_pos_14",
+      "file": "samples/rce/positive/rce_pos_14.py",
+      "category": "RCE",
+      "expected_verdict": "VULNERABLE",
+      "expected_severity": "HIGH",
+      "description": "Auto-generated RCE vulnerable sample."
+    },
+    {
+      "id": "rce_pos_15",
+      "file": "samples/rce/positive/rce_pos_15.py",
+      "category": "RCE",
+      "expected_verdict": "VULNERABLE",
+      "expected_severity": "HIGH",
+      "description": "Auto-generated RCE vulnerable sample."
+    },
+    {
+      "id": "rce_neg_16",
+      "file": "samples/rce/negative/rce_neg_16.py",
+      "category": "RCE",
+      "expected_verdict": "CLEAN",
+      "expected_severity": "LOW",
+      "description": "Auto-generated RCE clean sample."
+    },
+    {
+      "id": "rce_neg_17",
+      "file": "samples/rce/negative/rce_neg_17.py",
+      "category": "RCE",
+      "expected_verdict": "CLEAN",
+      "expected_severity": "LOW",
+      "description": "Auto-generated RCE clean sample."
+    },
+    {
+      "id": "rce_neg_18",
+      "file": "samples/rce/negative/rce_neg_18.py",
+      "category": "RCE",
+      "expected_verdict": "CLEAN",
+      "expected_severity": "LOW",
+      "description": "Auto-generated RCE clean sample."
+    },
+    {
+      "id": "rce_neg_19",
+      "file": "samples/rce/negative/rce_neg_19.py",
+      "category": "RCE",
+      "expected_verdict": "CLEAN",
+      "expected_severity": "LOW",
+      "description": "Auto-generated RCE clean sample."
+    },
+    {
+      "id": "rce_neg_20",
+      "file": "samples/rce/negative/rce_neg_20.py",
+      "category": "RCE",
+      "expected_verdict": "CLEAN",
+      "expected_severity": "LOW",
+      "description": "Auto-generated RCE clean sample."
+    },
+    {
+      "id": "rce_neg_21",
+      "file": "samples/rce/negative/rce_neg_21.py",
+      "category": "RCE",
+      "expected_verdict": "CLEAN",
+      "expected_severity": "LOW",
+      "description": "Auto-generated RCE clean sample."
+    },
+    {
+      "id": "rce_neg_22",
+      "file": "samples/rce/negative/rce_neg_22.py",
+      "category": "RCE",
+      "expected_verdict": "CLEAN",
+      "expected_severity": "LOW",
+      "description": "Auto-generated RCE clean sample."
+    },
+    {
+      "id": "rce_neg_23",
+      "file": "samples/rce/negative/rce_neg_23.py",
+      "category": "RCE",
+      "expected_verdict": "CLEAN",
+      "expected_severity": "LOW",
+      "description": "Auto-generated RCE clean sample."
+    },
+    {
+      "id": "rce_neg_24",
+      "file": "samples/rce/negative/rce_neg_24.py",
+      "category": "RCE",
+      "expected_verdict": "CLEAN",
+      "expected_severity": "LOW",
+      "description": "Auto-generated RCE clean sample."
+    },
+    {
+      "id": "rce_neg_25",
+      "file": "samples/rce/negative/rce_neg_25.py",
+      "category": "RCE",
+      "expected_verdict": "CLEAN",
+      "expected_severity": "LOW",
+      "description": "Auto-generated RCE clean sample."
+    },
+    {
+      "id": "rce_neg_26",
+      "file": "samples/rce/negative/rce_neg_26.py",
+      "category": "RCE",
+      "expected_verdict": "CLEAN",
+      "expected_severity": "LOW",
+      "description": "Auto-generated RCE clean sample."
+    },
+    {
+      "id": "rce_neg_27",
+      "file": "samples/rce/negative/rce_neg_27.py",
+      "category": "RCE",
+      "expected_verdict": "CLEAN",
+      "expected_severity": "LOW",
+      "description": "Auto-generated RCE clean sample."
+    },
+    {
+      "id": "rce_neg_28",
+      "file": "samples/rce/negative/rce_neg_28.py",
+      "category": "RCE",
+      "expected_verdict": "CLEAN",
+      "expected_severity": "LOW",
+      "description": "Auto-generated RCE clean sample."
+    },
+    {
+      "id": "rce_neg_29",
+      "file": "samples/rce/negative/rce_neg_29.py",
+      "category": "RCE",
+      "expected_verdict": "CLEAN",
+      "expected_severity": "LOW",
+      "description": "Auto-generated RCE clean sample."
+    },
+    {
+      "id": "rce_neg_30",
+      "file": "samples/rce/negative/rce_neg_30.py",
+      "category": "RCE",
+      "expected_verdict": "CLEAN",
+      "expected_severity": "LOW",
+      "description": "Auto-generated RCE clean sample."
+    },
+    {
+      "id": "dependency_pos_01",
+      "file": "samples/dependency/positive/dependency_pos_01.txt",
+      "category": "Dependency",
+      "expected_verdict": "VULNERABLE",
+      "expected_severity": "HIGH",
+      "description": "Auto-generated Dependency vulnerable sample."
+    },
+    {
+      "id": "dependency_pos_02",
+      "file": "samples/dependency/positive/dependency_pos_02.txt",
+      "category": "Dependency",
+      "expected_verdict": "VULNERABLE",
+      "expected_severity": "HIGH",
+      "description": "Auto-generated Dependency vulnerable sample."
+    },
+    {
+      "id": "dependency_pos_03",
+      "file": "samples/dependency/positive/dependency_pos_03.txt",
+      "category": "Dependency",
+      "expected_verdict": "VULNERABLE",
+      "expected_severity": "HIGH",
+      "description": "Auto-generated Dependency vulnerable sample."
+    },
+    {
+      "id": "dependency_pos_04",
+      "file": "samples/dependency/positive/dependency_pos_04.txt",
+      "category": "Dependency",
+      "expected_verdict": "VULNERABLE",
+      "expected_severity": "HIGH",
+      "description": "Auto-generated Dependency vulnerable sample."
+    },
+    {
+      "id": "dependency_pos_05",
+      "file": "samples/dependency/positive/dependency_pos_05.txt",
+      "category": "Dependency",
+      "expected_verdict": "VULNERABLE",
+      "expected_severity": "HIGH",
+      "description": "Auto-generated Dependency vulnerable sample."
+    },
+    {
+      "id": "dependency_pos_06",
+      "file": "samples/dependency/positive/dependency_pos_06.txt",
+      "category": "Dependency",
+      "expected_verdict": "VULNERABLE",
+      "expected_severity": "HIGH",
+      "description": "Auto-generated Dependency vulnerable sample."
+    },
+    {
+      "id": "dependency_pos_07",
+      "file": "samples/dependency/positive/dependency_pos_07.txt",
+      "category": "Dependency",
+      "expected_verdict": "VULNERABLE",
+      "expected_severity": "HIGH",
+      "description": "Auto-generated Dependency vulnerable sample."
+    },
+    {
+      "id": "dependency_pos_08",
+      "file": "samples/dependency/positive/dependency_pos_08.txt",
+      "category": "Dependency",
+      "expected_verdict": "VULNERABLE",
+      "expected_severity": "HIGH",
+      "description": "Auto-generated Dependency vulnerable sample."
+    },
+    {
+      "id": "dependency_pos_09",
+      "file": "samples/dependency/positive/dependency_pos_09.txt",
+      "category": "Dependency",
+      "expected_verdict": "VULNERABLE",
+      "expected_severity": "HIGH",
+      "description": "Auto-generated Dependency vulnerable sample."
+    },
+    {
+      "id": "dependency_pos_10",
+      "file": "samples/dependency/positive/dependency_pos_10.txt",
+      "category": "Dependency",
+      "expected_verdict": "VULNERABLE",
+      "expected_severity": "HIGH",
+      "description": "Auto-generated Dependency vulnerable sample."
+    },
+    {
+      "id": "dependency_pos_11",
+      "file": "samples/dependency/positive/dependency_pos_11.txt",
+      "category": "Dependency",
+      "expected_verdict": "VULNERABLE",
+      "expected_severity": "HIGH",
+      "description": "Auto-generated Dependency vulnerable sample."
+    },
+    {
+      "id": "dependency_pos_12",
+      "file": "samples/dependency/positive/dependency_pos_12.txt",
+      "category": "Dependency",
+      "expected_verdict": "VULNERABLE",
+      "expected_severity": "HIGH",
+      "description": "Auto-generated Dependency vulnerable sample."
+    },
+    {
+      "id": "dependency_pos_13",
+      "file": "samples/dependency/positive/dependency_pos_13.txt",
+      "category": "Dependency",
+      "expected_verdict": "VULNERABLE",
+      "expected_severity": "HIGH",
+      "description": "Auto-generated Dependency vulnerable sample."
+    },
+    {
+      "id": "dependency_pos_14",
+      "file": "samples/dependency/positive/dependency_pos_14.txt",
+      "category": "Dependency",
+      "expected_verdict": "VULNERABLE",
+      "expected_severity": "HIGH",
+      "description": "Auto-generated Dependency vulnerable sample."
+    },
+    {
+      "id": "dependency_pos_15",
+      "file": "samples/dependency/positive/dependency_pos_15.txt",
+      "category": "Dependency",
+      "expected_verdict": "VULNERABLE",
+      "expected_severity": "HIGH",
+      "description": "Auto-generated Dependency vulnerable sample."
+    },
+    {
+      "id": "dependency_neg_16",
+      "file": "samples/dependency/negative/dependency_neg_16.txt",
+      "category": "Dependency",
+      "expected_verdict": "CLEAN",
+      "expected_severity": "LOW",
+      "description": "Auto-generated Dependency clean sample."
+    },
+    {
+      "id": "dependency_neg_17",
+      "file": "samples/dependency/negative/dependency_neg_17.txt",
+      "category": "Dependency",
+      "expected_verdict": "CLEAN",
+      "expected_severity": "LOW",
+      "description": "Auto-generated Dependency clean sample."
+    },
+    {
+      "id": "dependency_neg_18",
+      "file": "samples/dependency/negative/dependency_neg_18.txt",
+      "category": "Dependency",
+      "expected_verdict": "CLEAN",
+      "expected_severity": "LOW",
+      "description": "Auto-generated Dependency clean sample."
+    },
+    {
+      "id": "dependency_neg_19",
+      "file": "samples/dependency/negative/dependency_neg_19.txt",
+      "category": "Dependency",
+      "expected_verdict": "CLEAN",
+      "expected_severity": "LOW",
+      "description": "Auto-generated Dependency clean sample."
+    },
+    {
+      "id": "dependency_neg_20",
+      "file": "samples/dependency/negative/dependency_neg_20.txt",
+      "category": "Dependency",
+      "expected_verdict": "CLEAN",
+      "expected_severity": "LOW",
+      "description": "Auto-generated Dependency clean sample."
+    },
+    {
+      "id": "dependency_neg_21",
+      "file": "samples/dependency/negative/dependency_neg_21.txt",
+      "category": "Dependency",
+      "expected_verdict": "CLEAN",
+      "expected_severity": "LOW",
+      "description": "Auto-generated Dependency clean sample."
+    },
+    {
+      "id": "dependency_neg_22",
+      "file": "samples/dependency/negative/dependency_neg_22.txt",
+      "category": "Dependency",
+      "expected_verdict": "CLEAN",
+      "expected_severity": "LOW",
+      "description": "Auto-generated Dependency clean sample."
+    },
+    {
+      "id": "dependency_neg_23",
+      "file": "samples/dependency/negative/dependency_neg_23.txt",
+      "category": "Dependency",
+      "expected_verdict": "CLEAN",
+      "expected_severity": "LOW",
+      "description": "Auto-generated Dependency clean sample."
+    },
+    {
+      "id": "dependency_neg_24",
+      "file": "samples/dependency/negative/dependency_neg_24.txt",
+      "category": "Dependency",
+      "expected_verdict": "CLEAN",
+      "expected_severity": "LOW",
+      "description": "Auto-generated Dependency clean sample."
+    },
+    {
+      "id": "dependency_neg_25",
+      "file": "samples/dependency/negative/dependency_neg_25.txt",
+      "category": "Dependency",
+      "expected_verdict": "CLEAN",
+      "expected_severity": "LOW",
+      "description": "Auto-generated Dependency clean sample."
+    },
+    {
+      "id": "dependency_neg_26",
+      "file": "samples/dependency/negative/dependency_neg_26.txt",
+      "category": "Dependency",
+      "expected_verdict": "CLEAN",
+      "expected_severity": "LOW",
+      "description": "Auto-generated Dependency clean sample."
+    },
+    {
+      "id": "dependency_neg_27",
+      "file": "samples/dependency/negative/dependency_neg_27.txt",
+      "category": "Dependency",
+      "expected_verdict": "CLEAN",
+      "expected_severity": "LOW",
+      "description": "Auto-generated Dependency clean sample."
+    },
+    {
+      "id": "dependency_neg_28",
+      "file": "samples/dependency/negative/dependency_neg_28.txt",
+      "category": "Dependency",
+      "expected_verdict": "CLEAN",
+      "expected_severity": "LOW",
+      "description": "Auto-generated Dependency clean sample."
+    },
+    {
+      "id": "dependency_neg_29",
+      "file": "samples/dependency/negative/dependency_neg_29.txt",
+      "category": "Dependency",
+      "expected_verdict": "CLEAN",
+      "expected_severity": "LOW",
+      "description": "Auto-generated Dependency clean sample."
+    },
+    {
+      "id": "dependency_neg_30",
+      "file": "samples/dependency/negative/dependency_neg_30.txt",
+      "category": "Dependency",
+      "expected_verdict": "CLEAN",
+      "expected_severity": "LOW",
+      "description": "Auto-generated Dependency clean sample."
+    }
+  ]
+}

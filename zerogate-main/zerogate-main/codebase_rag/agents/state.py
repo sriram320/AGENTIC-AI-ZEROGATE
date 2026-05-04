@@ -3,7 +3,7 @@ from __future__ import annotations
 import operator
 from typing import Annotated, TypedDict
 
-from ..api.models import FixProposal, VulnerabilityFinding
+from ..api.models import FixProposal, VulnerabilityFinding, ThreatObject, ThreatManifest
 
 
 class AgentState(TypedDict):
@@ -21,6 +21,10 @@ class AgentState(TypedDict):
     # Output of the analysis agent
     is_exploitable: bool
     analysis_reasoning: str
+    
+    # Output of detection agents (parallel merging)
+    identified_threats: Annotated[list[ThreatObject], operator.add]
+    threat_manifest: ThreatManifest | None
     
     # Output of the patching agent
     current_patch: FixProposal | None

@@ -1,0 +1,1 @@
+User.objects.filter(name=cmd).first()

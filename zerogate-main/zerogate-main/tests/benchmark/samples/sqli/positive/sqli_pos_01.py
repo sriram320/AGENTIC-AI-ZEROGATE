@@ -1,0 +1,1 @@
+client.execute('DELETE FROM logs WHERE tag = "%s"' % raw_data)

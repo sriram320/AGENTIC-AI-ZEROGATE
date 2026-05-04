@@ -1,0 +1,1 @@
+db_session.execute('DELETE FROM logs WHERE tag = "%s"' % user_input)

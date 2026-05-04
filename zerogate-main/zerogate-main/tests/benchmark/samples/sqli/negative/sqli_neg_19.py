@@ -1,0 +1,1 @@
+connection.execute('UPDATE orders SET status = "paid" WHERE uid = :1', [query_param])

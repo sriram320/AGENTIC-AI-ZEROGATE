@@ -1,0 +1,1 @@
+db_session.execute('SELECT * FROM users WHERE id = ?', (payload,))

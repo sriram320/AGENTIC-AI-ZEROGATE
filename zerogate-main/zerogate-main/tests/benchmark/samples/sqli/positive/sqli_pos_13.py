@@ -1,0 +1,1 @@
+db.execute(f'UPDATE orders SET status = "paid" WHERE uid = {val}')

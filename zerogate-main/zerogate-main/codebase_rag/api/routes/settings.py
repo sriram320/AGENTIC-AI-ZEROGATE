@@ -31,8 +31,13 @@ class AgentConfigResponse(BaseModel):
     has_api_key: bool
 
 
-@router.get("/models")
-async def get_model_settings() -> dict[str, AgentConfigResponse]:
+class GlobalSettingsResponse(BaseModel):
+    agents: dict[str, AgentConfigResponse]
+    has_github_token: bool
+
+
+@router.get("/models", response_model=GlobalSettingsResponse)
+async def get_model_settings() -> GlobalSettingsResponse:
     """Retrieve the current specialized agent configurations. API keys are masked."""
     response = {}
     
@@ -46,7 +51,10 @@ async def get_model_settings() -> dict[str, AgentConfigResponse]:
             has_api_key=bool(config.api_key and config.api_key != cs.DEFAULT_API_KEY)
         )
         
-    return {"agents": response}
+    return GlobalSettingsResponse(
+        agents=response,
+        has_github_token=bool(settings.GITHUB_TOKEN and settings.GITHUB_TOKEN != "")
+    )
 
 
 @router.post("/models")

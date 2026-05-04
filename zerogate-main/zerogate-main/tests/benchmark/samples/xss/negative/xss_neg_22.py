@@ -1,0 +1,1 @@
+document.getElementById('out').innerText = search_term

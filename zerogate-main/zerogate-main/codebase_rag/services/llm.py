@@ -17,13 +17,46 @@ from ..prompts import (
 )
 from ..providers.base import get_provider_from_config
 
-if TYPE_CHECKING:
-    from pydantic_ai.models import Model
-
+from pydantic_ai.models import Model
+from tenacity import retry, stop_after_attempt, wait_exponential
+from typing import Any
 
 def create_model(config: ModelConfig) -> Model:
     provider = get_provider_from_config(config)
     return provider.create_model(config.model_id)
+
+
+async def run_agent_with_fallback(agent: Agent, prompt: str, primary_config: ModelConfig) -> Any:
+    """Runs an agent with tenacity exponential backoff and Anthropic fallback."""
+    from tenacity import retry, stop_after_attempt, wait_exponential
+    
+    @retry(
+        stop=stop_after_attempt(3),
+        wait=wait_exponential(multiplier=1, min=2, max=10),
+        reraise=True
+    )
+    async def _run():
+        return await agent.run(prompt)
+        
+    try:
+        return await _run()
+    except Exception as e:
+        logger.warning(f"Primary model failed after retries ({e}). Falling back to Anthropic claude-3-5-sonnet-20241022.")
+        fallback_config = ModelConfig(
+            provider=cs.Provider.ANTHROPIC,
+            model_id="claude-3-5-sonnet-20241022",
+            api_key=settings.ORCHESTRATOR_API_KEY # Use same or specific key
+        )
+        fallback_model = create_model(fallback_config)
+        
+        # Create a new agent with the fallback model but same configuration
+        fallback_agent = Agent(
+            model=fallback_model,
+            system_prompt=agent.system_prompt,
+            result_type=agent.result_type,
+            tools=agent._tools if hasattr(agent, '_tools') else []
+        )
+        return await fallback_agent.run(prompt)
 
 
 def _clean_cypher_response(response_text: str) -> str:

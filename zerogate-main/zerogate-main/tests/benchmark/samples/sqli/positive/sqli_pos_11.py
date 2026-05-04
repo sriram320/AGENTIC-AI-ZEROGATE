@@ -1,0 +1,1 @@
+conn.execute('SELECT name FROM items WHERE cat = {}'.format(user_input))

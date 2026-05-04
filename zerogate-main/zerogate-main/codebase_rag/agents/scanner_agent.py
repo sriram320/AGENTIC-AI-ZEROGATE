@@ -38,14 +38,11 @@ class ScannerAgent:
         
         import os
         import sys
-        semgrep_path = os.path.join(os.path.dirname(sys.executable), "semgrep")
-        # Try adding .exe if on Windows and it doesn't exist as is
-        if os.name == "nt" and not os.path.exists(semgrep_path) and os.path.exists(semgrep_path + ".exe"):
-            semgrep_path += ".exe"
             
         cmd = [
             sys.executable,
-            semgrep_path,
+            "-m",
+            "semgrep",
             "scan",
             "--config", config,
             "--json",
@@ -54,13 +51,11 @@ class ScannerAgent:
         ]
         
         try:
-            is_windows = os.name == "nt"
             result = subprocess.run(
                 cmd, 
                 capture_output=True, 
                 text=True, 
                 check=False,
-                shell=is_windows
             )
             
             # Remove any non-JSON noise from start (like shebang warnings)

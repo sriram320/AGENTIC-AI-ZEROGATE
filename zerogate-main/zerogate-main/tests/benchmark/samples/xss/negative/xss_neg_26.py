@@ -1,0 +1,1 @@
+return Markup.escape(user_input)

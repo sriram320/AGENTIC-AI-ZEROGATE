@@ -1,7 +1,7 @@
 :root {
-  --bg-color: #0d0d12;
-  --surface-color: #1a1a24;
-  --surface-glass: rgba(26, 26, 36, 0.7);
+  --bg-color: #0A0A0A;
+  --surface-color: #121212;
+  --surface-glass: rgba(18, 18, 18, 0.7);
   --primary: #8b5cf6;
   --primary-glow: rgba(139, 92, 246, 0.3);
   --secondary: #06b6d4;
@@ -10,10 +10,12 @@
   --text-dim: #94a3b8;
   --border: rgba(255, 255, 255, 0.1);
   --border-glow: rgba(139, 92, 246, 0.5);
-  --success: #10b981;
+  --success: #00FF88;
   --warning: #f59e0b;
-  --error: #ef4444;
+  --error: #FF3B3B;
+  --accent-green: #00FF88;
   --font-main: 'Inter', system-ui, sans-serif;
+  --font-code: 'JetBrains Mono', monospace;
   --radius-xl: 24px;
 }
 
@@ -264,6 +266,49 @@ body::after {
   box-shadow: 0 0 0 4px var(--primary-glow);
 }
 
+.auth-indicator {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--success);
+  margin-top: 4px;
+  margin-left: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.auth-dot {
+  width: 6px;
+  height: 6px;
+  background: var(--success);
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--success);
+}
+
+.spinner {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 3px solid rgba(255,255,255,0.3);
+  border-radius: 50%;
+  border-top-color: white;
+  animation: spin 1s ease-in-out infinite;
+  margin-right: 12px;
+  vertical-align: middle;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.github-icon, .upload-icon {
+  margin-right: 12px;
+  font-size: 1.4rem;
+  vertical-align: middle;
+}
+
 .btn-primary {
   width: 100%;
   background: linear-gradient(135deg, var(--primary), var(--secondary));
@@ -276,6 +321,53 @@ body::after {
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   margin-top: 1rem;
+}
+
+.btn-primary:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(139, 92, 246, 0.5);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--text-main);
+  border: 1px solid var(--border);
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+  font-weight: 600;
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: var(--text-dim);
+}
+
+.btn-danger {
+  background: transparent;
+  color: var(--error);
+  border: 1px solid var(--error);
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+  font-weight: 600;
+}
+
+.btn-danger:hover {
+  background: rgba(255, 59, 59, 0.1);
+}
+
+.btn-sm {
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+}
+
+pre, code {
+  font-family: var(--font-code);
 }
 
 .btn-primary:hover {
@@ -379,6 +471,36 @@ body::after {
 @keyframes shimmer-bg {
   from { background-position: 100% 0; }
   to { background-position: -100% 0; }
+}
+
+.enterprise-section {
+  margin-bottom: 3rem;
+  animation: slide-up 0.6s ease-out;
+}
+
+.github-card {
+  border-left: 4px solid var(--success) !important;
+  background: linear-gradient(135deg, rgba(0, 255, 136, 0.05), rgba(0,0,0,0)) !important;
+}
+
+.badge {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.badge.success {
+  background: rgba(0, 255, 136, 0.1);
+  color: var(--success);
+  border: 1px solid var(--success);
+}
+
+.badge.warning {
+  background: rgba(245, 158, 11, 0.1);
+  color: var(--warning);
+  border: 1px solid var(--warning);
 }
 
 .agent-grid {

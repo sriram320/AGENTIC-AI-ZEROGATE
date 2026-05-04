@@ -24,3 +24,17 @@ PROJECT.md
 .pypi_cache.json
 .omc
 site/
+
+# Logs
+*.log
+*.txt
+!README.md
+!CONTRIBUTING.md
+!errorrectifier.md
+!ZEROGATE_BLUEPRINT.md
+!LICENSE
+!TODO.md
+
+# Project storage
+storage/
+scratch/

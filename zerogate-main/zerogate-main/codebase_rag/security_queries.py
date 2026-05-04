@@ -45,7 +45,7 @@ LIMIT 50
         cypher=r"""
 MATCH (f)
 WHERE (f:Function OR f:Class OR f:File) AND f.source_code IS NOT NULL
-  AND f.source_code =~ "[\\s\\S]*(os\\.system|subprocess\\.call|subprocess\\.Popen|exec\\(|eval\\()[\\s\\S]*"
+  AND f.source_code =~ "[\\s\\S]*(os\\.system|subprocess\\.call|subprocess\\.Popen|exec\\(|eval\\(|Runtime\\.exec|os/exec)[\\s\\S]*"
 RETURN f.qualified_name AS function,
        f.name AS name,
        f.start_line AS start_line,
@@ -54,7 +54,7 @@ LIMIT 50
 """,
         description=(
             "Finds functions using dangerous system execution calls "
-            "like os.system(), subprocess.call(), exec(), or eval()."
+            "like os.system(), subprocess.call(), exec(), eval(), Runtime.exec(), or os/exec."
         ),
     ),
     # ── Secrets ───────────────────────────────────────────────────────

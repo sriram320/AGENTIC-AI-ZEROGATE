@@ -1,0 +1,1 @@
+document.getElementById('out').innerHTML = query_param  # JS Context

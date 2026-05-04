@@ -182,6 +182,7 @@ class AppConfig(BaseSettings):
     CYPHER_PROVIDER_TYPE: cs.GoogleProviderType | None = None
     CYPHER_THINKING_BUDGET: int | None = None
     CYPHER_SERVICE_ACCOUNT_FILE: str | None = None
+    GITHUB_TOKEN: str | None = None
 
     OLLAMA_BASE_URL: str = "http://localhost:11434"
 

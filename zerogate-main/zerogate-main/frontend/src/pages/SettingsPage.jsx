@@ -24,6 +24,7 @@ export default function SettingsPage() {
     const [loading, setLoading] = useState(true);
     const [saving, setSaving] = useState(null);
     const [toast, setToast] = useState(null);
+    const [hasGithubToken, setHasGithubToken] = useState(false);
 
     // Form state for each agent
     const [formData, setFormData] = useState({});
@@ -36,6 +37,7 @@ export default function SettingsPage() {
         try {
             const data = await getAgentModels();
             setAgents(data.agents);
+            setHasGithubToken(data.has_github_token);
             
             const initialForm = {};
             // Initialize form state
@@ -122,6 +124,23 @@ export default function SettingsPage() {
             <p className="page-subtitle">
                 Assign specialized Open-Source models and API keys to each independent agent in the LangGraph network.
             </p>
+
+            <div className="enterprise-section">
+                <div className="agent-card github-card">
+                    <div className="agent-card-header">
+                        <h3>GitHub Enterprise Integration</h3>
+                        {hasGithubToken ? (
+                            <span className="badge success">PAT Authenticated</span>
+                        ) : (
+                            <span className="badge warning">No Token Found</span>
+                        )}
+                    </div>
+                    <p className="agent-desc">
+                        Connect ZeroGate to your GitHub organization to enable autonomous pull-request scanning 
+                        and private repository access.
+                    </p>
+                </div>
+            </div>
 
             <div className="agent-grid">
                 {AGENT_ROLES.map((role) => {

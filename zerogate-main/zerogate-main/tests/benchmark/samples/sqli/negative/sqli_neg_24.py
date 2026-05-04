@@ -1,0 +1,1 @@
+client.execute('UPDATE orders SET status = "paid" WHERE uid = :1', [raw_data])

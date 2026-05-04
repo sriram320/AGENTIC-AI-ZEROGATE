@@ -1,0 +1,1 @@
+return render_template_string('<div>' + val + '</div>')

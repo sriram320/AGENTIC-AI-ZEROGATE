@@ -1,0 +1,1 @@
+return '<div>' + req.query.name + '</div>' # Renders directly

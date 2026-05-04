@@ -148,6 +148,9 @@ export default function ConnectPage() {
                                     onChange={(e) => setRepoUrl(e.target.value)}
                                     disabled={processing}
                                 />
+                                <div className="auth-indicator">
+                                    <span className="auth-dot" /> GitHub Authentication Active (Private Repos Supported)
+                                </div>
                             </div>
                         ) : (
                             <div 
@@ -179,7 +182,13 @@ export default function ConnectPage() {
                             onClick={handleConnect}
                             disabled={processing}
                         >
-                            {processing ? 'Connecting Engine…' : mode === 'github' ? 'Launch Autonomous Scan' : 'Upload & Scan'}
+                            {processing ? (
+                                <><span className="spinner" /> Connecting Engine…</>
+                            ) : mode === 'github' ? (
+                                <><span className="github-icon">⌘</span> Launch Autonomous Scan</>
+                            ) : (
+                                <><span className="upload-icon">↑</span> Upload & Scan Source</>
+                            )}
                         </button>
                     </div>
                 </div>

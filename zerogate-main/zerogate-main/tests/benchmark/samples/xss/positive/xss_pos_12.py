@@ -1,0 +1,1 @@
+response.write('<span>' + user_id + '</span>')

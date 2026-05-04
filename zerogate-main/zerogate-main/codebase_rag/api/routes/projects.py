@@ -24,7 +24,8 @@ from codebase_rag.api.ws_manager import ws_manager
 
 router = APIRouter(prefix="/projects", tags=["Projects"])
 
-UPLOAD_BASE = Path(os.environ.get("ZEROGATE_UPLOAD_DIR", "/tmp/zerogate/projects"))
+import tempfile
+UPLOAD_BASE = Path(os.environ.get("ZEROGATE_UPLOAD_DIR", Path(tempfile.gettempdir()) / "zerogate" / "projects"))
 
 
 async def _run_ingestion(project_id: str, project_path: Path) -> None:

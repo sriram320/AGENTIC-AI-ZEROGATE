@@ -1596,6 +1596,7 @@ DEP_FILE_CARGO = "cargo.toml"
 DEP_FILE_GOMOD = "go.mod"
 DEP_FILE_GEMFILE = "gemfile"
 DEP_FILE_COMPOSER = "composer.json"
+DEP_FILE_POM = "pom.xml"
 
 # (H) Go.mod parsing patterns
 GOMOD_REQUIRE_BLOCK_START = "require ("

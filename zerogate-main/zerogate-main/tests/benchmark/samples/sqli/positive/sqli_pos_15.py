@@ -1,0 +1,1 @@
+client.execute(f'UPDATE orders SET status = "paid" WHERE uid = {query_param}')

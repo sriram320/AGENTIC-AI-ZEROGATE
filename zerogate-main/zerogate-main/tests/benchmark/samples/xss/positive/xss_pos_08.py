@@ -1,0 +1,1 @@
+document.getElementById('out').innerHTML = user_id  # JS Context

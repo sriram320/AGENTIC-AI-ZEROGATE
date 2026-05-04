@@ -16,8 +16,10 @@ async def lifespan(app: FastAPI):
     """Application lifespan handler — startup and shutdown."""
     logger.info("ZeroGate API server starting...")
 
+    import tempfile
+    
     # Create upload directory
-    upload_dir = Path("/tmp/zerogate/projects")
+    upload_dir = Path(tempfile.gettempdir()) / "zerogate" / "projects"
     upload_dir.mkdir(parents=True, exist_ok=True)
 
     yield

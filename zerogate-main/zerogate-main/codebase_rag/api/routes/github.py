@@ -14,6 +14,7 @@ from fastapi import APIRouter, Header, HTTPException, Request
 from loguru import logger
 
 from codebase_rag.api.state import project_store
+from codebase_rag.config import settings
 
 router = APIRouter(prefix="/github", tags=["GitHub"])
 
@@ -70,8 +71,14 @@ async def _clone_and_ingest(repo_url: str, default_branch: str, clone_url: str, 
         logger.info(f"Cloning GitHub repo: {repo_url} into {source_dir}")
         source_dir.mkdir(parents=True, exist_ok=True)
         
-        # In a real GitHub App, you would use an Installation Access Token to clone
-        # For this prototype, we're assuming public repos or SSH keys configured on the host
+        # Authenticate with GITHUB_TOKEN if provided
+        if settings.GITHUB_TOKEN and "github.com" in clone_url:
+            # Safer replacement to avoid corruption
+            if clone_url.startswith("https://"):
+                clone_url = f"https://{settings.GITHUB_TOKEN}@{clone_url[len('https://'):]}"
+            elif clone_url.startswith("http://"):
+                clone_url = f"http://{settings.GITHUB_TOKEN}@{clone_url[len('http://'):]}"
+
         cmd = ["git", "clone", "--depth", "1", clone_url, str(source_dir)]
         result = await asyncio.to_thread(
             subprocess.run, cmd, capture_output=True, text=True, check=False

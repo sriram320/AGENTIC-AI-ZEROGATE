@@ -1,0 +1,1 @@
+return "<script>alert('" + search_term + "')</script>"

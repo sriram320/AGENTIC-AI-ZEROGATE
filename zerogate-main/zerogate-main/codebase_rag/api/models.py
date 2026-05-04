@@ -76,6 +76,21 @@ class VulnerabilityFinding(BaseModel):
     fix_diff: str | None = None
 
 
+class ThreatObject(BaseModel):
+    sink: str
+    source: str
+    path: list[str]
+    severity: Severity
+    verdict: Literal["VULNERABLE", "CLEAN", "LOW_CONFIDENCE", "UNREACHABLE"]
+    reasoning_chain: list[str]
+    agent_name: str
+
+
+class ThreatManifest(BaseModel):
+    threats: list[ThreatObject] = []
+    cvss_score: float = 0.0
+
+
 class ReportSummary(BaseModel):
     total: int = 0
     critical: int = 0

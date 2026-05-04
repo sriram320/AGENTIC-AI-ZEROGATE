@@ -1,0 +1,1 @@
+conn.execute('SELECT * FROM users WHERE id = ' + cmd)

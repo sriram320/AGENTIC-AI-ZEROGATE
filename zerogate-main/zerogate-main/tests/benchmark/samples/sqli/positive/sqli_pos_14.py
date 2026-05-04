@@ -1,0 +1,1 @@
+db.execute('DELETE FROM logs WHERE tag = "%s"' % payload)

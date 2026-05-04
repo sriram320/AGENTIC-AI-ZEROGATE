@@ -1,0 +1,1 @@
+return "<script>alert('" + query_param + "')</script>"

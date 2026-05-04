@@ -1,9 +1,16 @@
+import ast
 import json
 import re
 from pathlib import Path
 
-import defusedxml.ElementTree as ET
-import toml
+try:
+    import defusedxml.ElementTree as ET
+except ImportError:
+    import xml.etree.ElementTree as ET
+try:
+    import toml
+except ImportError:
+    toml = None  # type: ignore
 from loguru import logger
 
 from .. import constants as cs
@@ -244,6 +251,31 @@ class ComposerJsonParser(DependencyParser):
         return dependencies
 
 
+class PomXmlParser(DependencyParser):
+    """Parse Maven pom.xml files."""
+    __slots__ = ()
+
+    def parse(self, file_path: Path) -> list[Dependency]:
+        dependencies: list[Dependency] = []
+        try:
+            tree = ET.parse(file_path)
+            root = tree.getroot()
+            # Handle Maven namespace
+            ns_match = re.match(r"\{(.+)\}", root.tag)
+            ns = {"m": ns_match.group(1)} if ns_match else {}
+            prefix = "m:" if ns else ""
+
+            for dep in root.findall(f".//{prefix}dependency", ns):
+                gid = dep.findtext(f"{prefix}groupId", "", ns)
+                aid = dep.findtext(f"{prefix}artifactId", "", ns)
+                ver = dep.findtext(f"{prefix}version", "unknown", ns)
+                full_name = f"{gid}:{aid}" if gid else aid
+                dependencies.append(Dependency(full_name, ver))
+        except Exception as e:
+            logger.error(f"Failed to parse pom.xml {file_path}: {e}")
+        return dependencies
+
+
 class CsprojParser(DependencyParser):
     __slots__ = ()
 
@@ -264,6 +296,27 @@ class CsprojParser(DependencyParser):
         return dependencies
 
 
+def check_import_reachability(project_path: Path, package_name: str) -> bool:
+    """Check if a package is actually imported anywhere in the project source."""
+    import_name = package_name.lower().replace("-", "_").split(":")[0]
+
+    for py_file in project_path.rglob("*.py"):
+        try:
+            tree = ast.parse(py_file.read_text(encoding="utf-8", errors="ignore"))
+            for node in ast.walk(tree):
+                if isinstance(node, ast.Import):
+                    for alias in node.names:
+                        if import_name in alias.name.lower():
+                            return True
+                elif isinstance(node, ast.ImportFrom):
+                    module = node.module or ""
+                    if import_name in module.lower():
+                        return True
+        except Exception:
+            continue
+    return False
+
+
 def parse_dependencies(file_path: Path) -> list[Dependency]:
     file_name = file_path.name.lower()
 
@@ -282,6 +335,8 @@ def parse_dependencies(file_path: Path) -> list[Dependency]:
             return GemfileParser().parse(file_path)
         case cs.DEP_FILE_COMPOSER:
             return ComposerJsonParser().parse(file_path)
+        case cs.DEP_FILE_POM:
+            return PomXmlParser().parse(file_path)
         case _ if file_path.suffix.lower() == cs.CSPROJ_SUFFIX:
             return CsprojParser().parse(file_path)
         case _:
